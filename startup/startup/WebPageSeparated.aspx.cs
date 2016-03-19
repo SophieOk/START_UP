@@ -21,4 +21,9 @@ public partial class WebPageSeparated : System.Web.UI.Page
     {
 
     }
+    protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
+   
 }
