@@ -8,7 +8,9 @@ namespace ClassLibrary1
 {
     public class Methods
     {
-        public static List<string> Keying(string description)
+        /*public delegate List<string> del(string description);
+        public del Keying = x => x.Split(new char[] { ' ', '!', '\'', '.', ';', '(', ')', '+', '=', '*', '/', '?', '#', '№' }, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
+        */public static List<string> Keying(string description)
         {
             List<string> keywords = new List<string>();
             keywords = description.Split(new char[] { ' ', '!', '\'', '.', ';', '(', ')', '+', '=', '*', '/', '?', '#', '№' }, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
