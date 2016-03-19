@@ -119,6 +119,12 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeFirst\CodeFirst.csproj">
+      <Project>{08ae8d53-19e6-4597-8182-bf79220d0cd1}</Project>
+      <Name>CodeFirst</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

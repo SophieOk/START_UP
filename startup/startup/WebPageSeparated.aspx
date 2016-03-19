@@ -16,10 +16,7 @@
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-
-    HOW GOOD IS YOUR START UP?
+    &nbsp;&nbsp;&nbsp;HOW GOOD IS YOUR START UP?
 
     </h1>
     
@@ -70,8 +67,8 @@
                  <br />
 
              <asp:Button ID="Button1" runat="server" BackColor="White" BorderColor="Black" BorderStyle="Outset"  ForeColor="Black"
-             OnClick="Button1_Click" style="font-family: 'Eras ITC';margin-left: 197px; margin-right: 12px; 
-             margin-bottom: 0px; margin-top: 1px;" Text="Ok"  Width="108px" Height="35px" />
+             OnClick="Button1_Click" style="font-family: 'Eras ITC';margin-left: 55px; margin-right: 12px; 
+             margin-bottom: 0px; margin-top: 1px;" Text="Ok"  Width="86px" Height="35px" />
              <br />
              <h2 style="color: black; font-family: 'Eras ITC'; font-size: 28px; font-weight: lighter; 
    font-style: inherit; font-variant: inherit; text-transform: inherit; height: 11px; width: 224px; margin-left: 102px;" >  
