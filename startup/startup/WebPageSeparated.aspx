@@ -58,7 +58,7 @@
 
                 <h3 color: black; font-family: 'Eras ITC'; style="width: 256px; margin-left: 872px; font-family: 'Eras ITC';
  font-size: 28px; font-weight: lighter; height: 40px;" > Answer:<asp:TextBox ID="TextBox2" 
-     runat="server" Height="84px" style="margin-left: 0px; margin-right: 0px" Width="435px"></asp:TextBox>
+     runat="server" Height="84px" style="margin-left: 0px; margin-right: 0px" Width="435px" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
                     </h3>
                  <h2 style="color: black; font-family: 'Eras ITC'; font-size: 28px; font-weight: lighter; 
    font-style: inherit; font-variant: inherit; text-transform: inherit; height: 18px; width: 223px; margin-left: 102px; margin-bottom: 9px;" >  

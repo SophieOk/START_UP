@@ -11,11 +11,15 @@ namespace ClassLibrary1
         delegate List<string> del(string a);
         public static List<string> Keying(string description)
         {
+
             del Kying = x => x.Split(new char[] { ' ', '!', '\'', '.', ';', '(', ')', '+', '=', '*', '/', '?', '#', '№' }, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
             return Kying(description);
-    }
+        }
         public static List<int> Comparing(string sphere, List<string> categories, List<string> keying)
         {
+            foreach (string key in keying)
+                key.ToLowerInvariant();
+
             List<int> indexes = new List<int>();
             /*int cat = 0;
             for (int i = 0; i < db.GetLength(0); i++)
@@ -33,7 +37,7 @@ namespace ClassLibrary1
                             where key == item
                             select new { Index = i++}).ToList();
 
-                indexes.AddRange(temp);
+                //indexes.AddRange(temp);
             }
             /*foreach (string i in keying)
             {
