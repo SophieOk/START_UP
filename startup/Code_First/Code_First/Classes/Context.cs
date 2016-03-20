@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 
-namespace CodeFirst.Classes
+namespace Code_First.Classes
 {
-    public class Context : DbContext
+   public class Context : DbContext
     {
-        public Context() : base("StartDatabase")
+        public Context() : base("StartStartDatabase")
         {
-
+            
         }
 
         public DbSet<Answer> Answers { get; set; }
@@ -19,4 +19,5 @@ namespace CodeFirst.Classes
         public DbSet<Sphere> Spheres { get; set; }
 
     }
+
 }

@@ -118,9 +118,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CodeFirst\CodeFirst.csproj">
-      <Project>{d6dbd30e-eb53-4ad8-9ac8-55bd2ae616c7}</Project>
-      <Name>CodeFirst</Name>
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Code_First\Code_First\Code_First.csproj">
+      <Project>{d7e61ba8-d247-475b-b80c-810ef5898881}</Project>
+      <Name>Code_First</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 
-namespace CodeFirst.Classes
+namespace Code_First
 {
     public class Sphere
     {
