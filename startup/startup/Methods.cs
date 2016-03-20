@@ -8,19 +8,16 @@ namespace ClassLibrary1
 {
     public class Methods
     {
-        public delegate List<string> del(string description);
+        delegate List<string> del(string a);
         public static List<string> Keying(string description)
         {
-            /*List<string> keywords = new List<string>();
-            keywords = description.Split(new char[] { ' ', '!', '\'', '.', ';', '(', ')', '+', '=', '*', '/', '?', '#', '№' }, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
-            return keywords;*/
-            del Huying = x => x.Split(new char[] { ' ', '!', '\'', '.', ';', '(', ')', '+', '=', '*', '/', '?', '#', '№' }, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
-            return Huying(description);
+            del Kying = x => x.Split(new char[] { ' ', '!', '\'', '.', ';', '(', ')', '+', '=', '*', '/', '?', '#', '№' }, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
+            return Kying(description);
     }
-        public static List<int> Comparing(string category, string[,] db, List<string> keying)
+        public static List<int> Comparing(string sphere, List<string> categories, List<string> keying)
         {
             List<int> indexes = new List<int>();
-            int cat = 0;
+            /*int cat = 0;
             for (int i = 0; i < db.GetLength(0); i++)
             {
                 if (category == db[0, i])
@@ -28,12 +25,13 @@ namespace ClassLibrary1
                     cat = i;
                     break;
                 }
-            }
+            }*/
             foreach (string key in keying)
             {
-                var temp = (from item in db//поменять двумерный массив на список
-                            where key == item[cat]
-                            select new { Index = i++ }).ToList();
+                int i = 0;
+                var temp = (from item in categories//поменять двумерный массив на список
+                            where key == item
+                            select new { Index = i++}).ToList();
 
                 indexes.AddRange(temp);
             }
