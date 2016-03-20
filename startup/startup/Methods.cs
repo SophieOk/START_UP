@@ -8,14 +8,15 @@ namespace ClassLibrary1
 {
     public class Methods
     {
-        /*public delegate List<string> del(string description);
-        public del Keying = x => x.Split(new char[] { ' ', '!', '\'', '.', ';', '(', ')', '+', '=', '*', '/', '?', '#', '№' }, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
-        */public static List<string> Keying(string description)
+        public delegate List<string> del(string description);
+        public static List<string> Keying(string description)
         {
-            List<string> keywords = new List<string>();
+            /*List<string> keywords = new List<string>();
             keywords = description.Split(new char[] { ' ', '!', '\'', '.', ';', '(', ')', '+', '=', '*', '/', '?', '#', '№' }, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
-            return keywords;
-        }
+            return keywords;*/
+            del Huying = x => x.Split(new char[] { ' ', '!', '\'', '.', ';', '(', ')', '+', '=', '*', '/', '?', '#', '№' }, StringSplitOptions.RemoveEmptyEntries).ToList<string>();
+            return Huying(description);
+    }
         public static List<int> Comparing(string category, string[,] db, List<string> keying)
         {
             List<int> indexes = new List<int>();
@@ -28,7 +29,15 @@ namespace ClassLibrary1
                     break;
                 }
             }
-            foreach (string i in keying)
+            foreach (string key in keying)
+            {
+                var temp = (from item in db//поменять двумерный массив на список
+                            where key == item[cat]
+                            select new { Index = i++ }).ToList();
+
+                indexes.AddRange(temp);
+            }
+            /*foreach (string i in keying)
             {
                 for (int j = 0; j < db.GetLength(1); j++)
                 {
@@ -38,7 +47,7 @@ namespace ClassLibrary1
                         break;
                     }
                 }
-            }
+            }*/
             indexes.Sort();
             return indexes;
         }
