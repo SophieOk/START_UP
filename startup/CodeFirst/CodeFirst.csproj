@@ -54,21 +54,11 @@
     <Compile Include="Classes\Category.cs" />
     <Compile Include="Classes\Context.cs" />
     <Compile Include="Classes\Sphere.cs" />
-    <Compile Include="Migrations\201603210640297_1migr.cs" />
-    <Compile Include="Migrations\201603210640297_1migr.Designer.cs">
-      <DependentUpon>201603210640297_1migr.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201603210640297_1migr.resx">
-      <DependentUpon>201603210640297_1migr.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
