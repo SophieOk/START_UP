@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 
-namespace Code_First
+namespace CodeFirst.Classes
 {
     public class Category
     {
@@ -13,6 +13,5 @@ namespace Code_First
         public string Name { get; set; }
         public string Sphere { get; set; }
         public List<string> Keywords { get; set; }
-        
     }
 }

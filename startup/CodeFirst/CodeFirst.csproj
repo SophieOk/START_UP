@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D7E61BA8-D247-475B-B80C-810EF5898881}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{C162E025-B5B7-4A74-89D1-672A52BE27EC}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Code_First</RootNamespace>
-    <AssemblyName>Code_First</AssemblyName>
+    <RootNamespace>CodeFirst</RootNamespace>
+    <AssemblyName>CodeFirst</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -54,31 +51,13 @@
   <ItemGroup>
     <Compile Include="Classes\Answer.cs" />
     <Compile Include="Classes\Category.cs" />
-    <Compile Include="Classes\Context.cs" />
-    <Compile Include="Migrations\201603191605298_1migr.cs" />
-    <Compile Include="Migrations\201603191605298_1migr.Designer.cs">
-      <DependentUpon>201603191605298_1migr.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201603200124085_2migr.cs" />
-    <Compile Include="Migrations\201603200124085_2migr.Designer.cs">
-      <DependentUpon>201603200124085_2migr.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\MyContextInitializer.cs" />
     <Compile Include="Classes\Sphere.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201603191605298_1migr.resx">
-      <DependentUpon>201603191605298_1migr.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201603200124085_2migr.resx">
-      <DependentUpon>201603200124085_2migr.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

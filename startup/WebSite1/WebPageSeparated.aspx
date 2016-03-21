@@ -23,10 +23,7 @@
     &nbsp;&nbsp;&nbsp;HOW GOOD IS YOUR START UP?
 
     </h1>
-    
-    <hr   style="color: black; width: 39%; font-style: normal; font-weight: 500;"> 
-   
-         </hr>
+
     
    
 
@@ -38,7 +35,7 @@
    font-style: inherit; font-variant: inherit; text-transform: inherit; height: 11px; width: 419px;" >  
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                  &nbsp;&nbsp;
-     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"
+     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
          style=" border-width: thin; color: black; border-top-color: black;  
  width: 188px; margin-left: 0px; border-bottom-color: black; 
  border-color: black; font-family: 'Eras ITC'; font-weight: 100; 
@@ -62,7 +59,7 @@
 
                 <h3 color: black; font-family: 'Eras ITC'; style="width: 256px; margin-left: 872px; font-family: 'Eras ITC';
  font-size: 28px; font-weight: lighter; height: 40px;" > Answer:<asp:TextBox ID="TextBox2" 
-     runat="server" Height="84px" style="margin-left: 0px; margin-right: 0px" Width="435px" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
+     runat="server" Height="84px" style="margin-left: 0px; margin-right: 0px" Width="435px" ></asp:TextBox>
                     </h3>
                  <h2 style="color: black; font-family: 'Eras ITC'; font-size: 28px; font-weight: lighter; 
    font-style: inherit; font-variant: inherit; text-transform: inherit; height: 18px; width: 223px; margin-left: 102px; margin-bottom: 9px;" >  
@@ -70,7 +67,7 @@
 
         <asp:TextBox ID="TextBox1" runat="server" Height="79px" Width="387px" BorderStyle="Solid" 
             BackColor ="White" BorderColor="Black" BorderWidth="1px" ForeColor="Black" 
-            style="margin-right: 45px; margin-left: 52px; margin-top: 5px; margin-bottom: 3px;" OnTextChanged="TextBox1_TextChanged" ></asp:TextBox>
+            style="margin-right: 45px; margin-left: 52px; margin-top: 5px; margin-bottom: 3px;"  ></asp:TextBox>
                  <br />
 
              <asp:Button ID="Button1" runat="server" BackColor="White" BorderColor="Black" BorderStyle="Outset"  ForeColor="Black"

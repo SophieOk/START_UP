@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 
-namespace Code_First
+namespace CodeFirst.Classes
 {
-   public class Answer
+    public class Answer
     {
         public int Id { get; set; }
         public string Category { get; set; }
