@@ -5,14 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 
-
-namespace CodeFirst.Model
+namespace CodeFirst
 {
-   public class Answer
+    public class Answer
     {
         public int Id { get; set; }
-        public Category Category { get; set; }
+        public string Category { get; set; }
         public string Text { get; set; }
-        
     }
 }

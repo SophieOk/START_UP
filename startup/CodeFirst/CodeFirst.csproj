@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{08AE8D53-19E6-4597-8182-BF79220D0CD1}</ProjectGuid>
+    <ProjectGuid>{D6DBD30E-EB53-4AD8-9AC8-55BD2AE616C7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CodeFirst</RootNamespace>
     <AssemblyName>CodeFirst</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,16 +50,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201603191412480_1migr.cs" />
-    <Compile Include="Migrations\201603191412480_1migr.Designer.cs">
-      <DependentUpon>201603191412480_1migr.cs</DependentUpon>
+    <Compile Include="Classes\Answer.cs" />
+    <Compile Include="Classes\Category.cs" />
+    <Compile Include="Classes\Context.cs" />
+    <Compile Include="Classes\Sphere.cs" />
+    <Compile Include="Migrations\201603210640297_1migr.cs" />
+    <Compile Include="Migrations\201603210640297_1migr.Designer.cs">
+      <DependentUpon>201603210640297_1migr.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Model\Category.cs" />
-    <Compile Include="Model\Context.cs" />
-    <Compile Include="Model\Initializer.cs" />
-    <Compile Include="Model\Sphere.cs" />
-    <Compile Include="Model\Answer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -66,8 +66,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201603191412480_1migr.resx">
-      <DependentUpon>201603191412480_1migr.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201603210640297_1migr.resx">
+      <DependentUpon>201603210640297_1migr.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
