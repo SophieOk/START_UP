@@ -54,9 +54,9 @@
     <Compile Include="Classes\Category.cs" />
     <Compile Include="Classes\Context.cs" />
     <Compile Include="Classes\Sphere.cs" />
-    <Compile Include="Migrations\201603210640297_1migr.cs" />
-    <Compile Include="Migrations\201603210640297_1migr.Designer.cs">
-      <DependentUpon>201603210640297_1migr.cs</DependentUpon>
+    <Compile Include="Migrations\201603211123084_1Migration.cs" />
+    <Compile Include="Migrations\201603211123084_1Migration.Designer.cs">
+      <DependentUpon>201603211123084_1Migration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,8 +66,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201603210640297_1migr.resx">
-      <DependentUpon>201603210640297_1migr.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201603211123084_1Migration.resx">
+      <DependentUpon>201603211123084_1Migration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
