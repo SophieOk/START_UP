@@ -11,7 +11,9 @@ namespace CodeFirst.Classes
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Sphere { get; set; }
         public List<string> Keywords { get; set; }
+        public virtual Sphere Sphere { get; set; }
+
+        public Category() { Keywords = new List<string>(); }
     }
 }

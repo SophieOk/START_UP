@@ -11,6 +11,6 @@ namespace CodeFirst.Classes
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public List<string> Categories { get; set; }
+        public virtual IEnumerable<Category> Categories { get; set; }
     }
 }
